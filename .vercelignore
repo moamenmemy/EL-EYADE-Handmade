@@ -9,4 +9,4 @@ out
 build
 *.log
 .DS_Store
-src
+# keep src so Vercel can build the project
