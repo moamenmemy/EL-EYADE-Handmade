@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Penta": {
+    "eyade": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/penta",
+            "outputPath": "dist/eyade",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -26,10 +26,10 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/assets",
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/"
               }
             ],
             "styles": [
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Penta:build:production"
+              "buildTarget": "eyade:build:production"
             },
             "development": {
-              "buildTarget": "Penta:build:development"
+              "buildTarget": "eyade:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,10 +92,10 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/assets",
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/"
               }
             ],
             "styles": [
@@ -108,6 +108,6 @@
     }
   },
   "cli": {
-    "analytics": "8d12fb2e-2070-4cb7-8d6a-c81a54f4cc09"
+    "analytics": "843ce14a-9289-4eab-9577-7765d21a5663"
   }
 }
