@@ -27,7 +27,7 @@ const angularApp = new AngularNodeAppEngine();
  */
 
 /**
- * Serve static files from /browser
+ * Serve static files from /browser (which includes public assets)
  */
 app.use(
   express.static(browserDistFolder, {
