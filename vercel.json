@@ -7,8 +7,6 @@
       "config": { "distDir": "dist/eyade/browser" }
     }
   ],
-  "routes": [
-    { "src": "^/(.*)$", "dest": "/$1" }
-  ]
+  
 }
 
