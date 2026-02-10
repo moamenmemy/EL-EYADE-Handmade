@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "postbuild": "npm run copy:assets",
+    "copy:assets": "node scripts/copy-assets.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:eyade": "node dist/eyade/server/server.mjs"
