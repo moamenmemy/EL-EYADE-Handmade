@@ -1,15 +1,14 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
-  "installCommand": "npm install",
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "rewrites": [
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/"
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist/eyade/browser" }
     }
+  ],
+  "routes": [
+    { "src": "^/(.*)$", "dest": "/$1" }
   ]
 }
 
